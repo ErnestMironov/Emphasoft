@@ -1,0 +1,21 @@
+.header {
+  padding-top: 45px;
+
+  .container {
+    max-width: 1304px;
+  }
+
+  .nav-link {
+    color: $txt-color;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 35px;
+    font-family: $sunFlower;
+    transition: all ease 0.15s;
+
+    &:hover {
+      color: $txt-color_light;
+    }
+  }
+}

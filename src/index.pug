@@ -3,4 +3,98 @@ html(lang="en")
     include pug/blocks/head.pug
     body
         include pug/blocks/header.pug 
+        .main-banner.container
+            .row.position-relative.justify-content-between.align-items-center
+                img.main-banner__bg.position-absolute.col-8(src="images/vector-map.svg")
+                .main-banner__txt.col-5
+                    h1.h1.main-banner__title Header
+                    p.main-banner__desc
+                        |Lorem irure fugiat cupidatat duis mollit commodo. 
+                        |Eu cillum ea reprehenderit elit laboris do exercitation
+                        |laborum sit elit incididunt aute fugiat consectetur. 
+                    a.main-banner__link(href="javascript:;") Watch the video to find out more
+                picture.main-banner__img.col-5
+                    source(src="images/video.webp", type="image/webp")
+                    img.img-fluid(src="images/video.png", alt="alt")
+        .page-content
+            .faf.container
+                .row
+                    .col-12
+                        h2.h2.text-center.faf__title Functionality and features
+                    .col-12
+                        ul.faf__list.row.justify-content-between
+                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                                .faf__icon
+                                    img(src="images/functionality/icon1.svg", alt="planet")
+                                p.text-center.faf__list-txt 
+                                    |Access data from
+                                    br 
+                                    |over 30,0000 global stations
+                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                                .faf__icon
+                                    img(src="images/functionality/icon2.svg", alt="data")
+                                p.text-center.faf__list-txt 
+                                    |Create your own library
+                                    br 
+                                    |of data
+                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                                .faf__icon
+                                    img(src="images/functionality/icon3.svg", alt="notebook")
+                                p.text-center.faf__list-txt 
+                                    |Analyse your data
+                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                                .faf__icon
+                                    img(src="images/functionality/icon4.svg", alt="watchers")
+                                p.text-center.faf__list-txt 
+                                    |Present your data
+            .quiz.container
+                .row.align-items-center
+                    .col-6.text-center
+                        img.quiz__img(src="images/service.svg")
+                    .col-6
+                        h2.h1.quiz__title We want the best value for you:
+                        .quiz__list
+                            .quiz__item
+                                h3.h3.quiz__subtitle
+                                    |Are you willing to spend money?
+                                .quiz__radio-wrap.wrap
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="spend-money", value="yes")
+                                        btn.btn.btn-outline-primary Yes
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="spend-money", value="no")
+                                        btn.btn.btn-outline-primary No
+                            .quiz__item
+                                h3.h3.quiz__subtitle
+                                    |Who are you?
+                                .quiz__radio-wrap.wrap
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="who-a-u", value="Individual")
+                                        btn.btn.btn-outline-primary Individual
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="who-a-u", value="Student")
+                                        btn.btn.btn-outline-primary Student
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="who-a-u", value="Company user")
+                                        btn.btn.btn-outline-primary Company user
+                            .quiz__item
+                                h3.h3.quiz__subtitle
+                                    |What sort of data are you working with?
+                                .quiz__radio-wrap.wrap
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="spend-money", value="Meteorological")
+                                        btn.btn.btn-outline-primary Meteorological
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="spend-money", value="Other ")
+                                        btn.btn.btn-outline-primary Other 
+                            .quiz__item
+                                h3.h3.quiz__subtitle
+                                    |Wind Speed Data:
+                                .quiz__radio-wrap.wrap
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="spend-money", value="I-have-my-own")
+                                        btn.btn.btn-outline-primary I have my own
+                                    label.quiz__radio.col-auto
+                                        input(type="radio", name="spend-money", value="I-want-to-find-quality-wind-speed-data")
+                                        btn.btn.btn-outline-primary I want to find quality wind speed data 
         include pug/blocks/footer.pug 

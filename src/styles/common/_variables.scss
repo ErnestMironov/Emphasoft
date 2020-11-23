@@ -1,36 +1,41 @@
-//--------DEVICE SIZE--------
-$small-mobile: 400px;
-$tablet-width: 648px;
-$desktop-width: 1023px;
-$container-width: 1200px;
+$txt-color: #305f6d;
+$txt-color_light: #46b4d4;
+$grey: #8ca0a6;
 
-@mixin small-mobile {
-  @media (max-width: $small-mobile) {
-    @content;
-  }
-}
+$sunFlower: "Sunflower", sans-serif;
 
-@mixin mobile {
-  @media (max-width: #{$tablet-width - 1px}) {
-    @content;
-  }
-}
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1104px,
+);
 
-@mixin tablet {
-  @media (max-width: #{$desktop-width}) {
-    @content;
-  }
-}
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1164px
+);
 
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width + 1px}) {
-    @content;
-  }
-}
-
-@mixin container {
-  @media (min-width: #{$desktop-width}) and (max-width: #{$container-width}) {
-    @content;
-  }
-}
+$theme-colors: (
+  primary: #22cbff,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+);

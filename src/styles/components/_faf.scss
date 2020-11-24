@@ -5,6 +5,13 @@
     margin-top: 30px;
   }
 
+  &__list-item {
+    margin-bottom: 40px;
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
   &__icons {
     height: 160px;
     display: flex;

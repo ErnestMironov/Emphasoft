@@ -3,55 +3,55 @@ html(lang="en")
     include pug/blocks/head.pug
     body
         include pug/blocks/header.pug 
-        .main-banner.container
+        .main-banner.container#main
             .row.position-relative.justify-content-between.align-items-center
-                img.main-banner__bg.position-absolute.col-8(src="images/vector-map.svg")
-                .main-banner__txt.col-5
+                img.main-banner__bg.position-absolute.col-12.col-md-8(src="images/vector-map.svg")
+                .main-banner__txt.col-12.col-md-5
                     h1.h1.main-banner__title Header
                     p.main-banner__desc
                         |Lorem irure fugiat cupidatat duis mollit commodo. 
                         |Eu cillum ea reprehenderit elit laboris do exercitation
                         |laborum sit elit incididunt aute fugiat consectetur. 
                     a.main-banner__link(href="javascript:;") Watch the video to find out more
-                picture.main-banner__img.col-5
+                picture.main-banner__img.col-12.col-md-5
                     source(src="images/video.webp", type="image/webp")
                     img.img-fluid(src="images/video.png", alt="alt")
         .page-content
-            .faf.container
+            .faf.container#features
                 .row
                     .col-12
-                        h2.h2.text-center.faf__title Functionality and features
+                        h2.h2.text-center.faf__title.wow.animate__animated.animate__fadeInLeft(data-wow-duration="0.5s") Functionality and features
                     .col-12
                         ul.faf__list.row.justify-content-between
-                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                            li.faf__list-item.col-12.col-sm-6.col-lg-3.row.flex-column.align-items-center.wow.animate__animated.animate__backInUp(data-wow-duration="0.3s")
                                 .faf__icon
                                     img(src="images/functionality/icon1.svg", alt="planet")
                                 p.text-center.faf__list-txt 
                                     |Access data from
                                     br 
                                     |over 30,0000 global stations
-                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                            li.faf__list-item.col-12.col-sm-6.col-lg-3.row.flex-column.align-items-center.wow.animate__animated.animate__backInUp(data-wow-duration="0.3s" data-wow-delay="0.2s")
                                 .faf__icon
                                     img(src="images/functionality/icon2.svg", alt="data")
                                 p.text-center.faf__list-txt 
                                     |Create your own library
                                     br 
                                     |of data
-                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                            li.faf__list-item.col-12.col-sm-6.col-lg-3.row.flex-column.align-items-center.wow.animate__animated.animate__backInUp(data-wow-duration="0.3s" data-wow-delay="0.4s")
                                 .faf__icon
                                     img(src="images/functionality/icon3.svg", alt="notebook")
                                 p.text-center.faf__list-txt 
                                     |Analyse your data
-                            li.faf__list-item.col-3.row.flex-column.align-items-center
+                            li.faf__list-item.col-12.col-sm-6.col-lg-3.row.flex-column.align-items-center.wow.animate__animated.animate__backInUp(data-wow-duration="0.3s" data-wow-delay="0.6s")
                                 .faf__icon
                                     img(src="images/functionality/icon4.svg", alt="watchers")
                                 p.text-center.faf__list-txt 
                                     |Present your data
-            .quiz.container
+            .quiz.container#item
                 .row.align-items-center
-                    .col-6.text-center
+                    .col-6.text-center.d-none.d-md-block
                         img.quiz__img(src="images/service.svg")
-                    .col-6
+                    .col-12.col-md-6
                         h2.h1.quiz__title We want the best value for you:
                         .quiz__list
                             .quiz__item
@@ -60,41 +60,86 @@ html(lang="en")
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="spend-money", value="yes")
-                                        btn.btn.btn-outline-primary Yes
+                                        .btn.btn-outline-primary Yes
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="spend-money", value="no")
-                                        btn.btn.btn-outline-primary No
+                                        .btn.btn-outline-primary No
                             .quiz__item
                                 h3.h3.quiz__subtitle
                                     |Who are you?
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
-                                        input(type="radio", name="who-a-u", value="Individual")
-                                        btn.btn.btn-outline-primary Individual
+                                        input(type="radio", name="whoAU", value="Individual")
+                                        .btn.btn-outline-primary Individual
                                     label.quiz__radio.col-auto
-                                        input(type="radio", name="who-a-u", value="Student")
-                                        btn.btn.btn-outline-primary Student
+                                        input(type="radio", name="whoAU", value="Student")
+                                        .btn.btn-outline-primary Student
                                     label.quiz__radio.col-auto
-                                        input(type="radio", name="who-a-u", value="Company user")
-                                        btn.btn.btn-outline-primary Company user
+                                        input(type="radio", name="whoAU", value="companyUser")
+                                        .btn.btn-outline-primary Company user
                             .quiz__item
                                 h3.h3.quiz__subtitle
                                     |What sort of data are you working with?
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
-                                        input(type="radio", name="spend-money", value="Meteorological")
-                                        btn.btn.btn-outline-primary Meteorological
+                                        input(type="radio", name="sort-data", value="Meteorological")
+                                        .btn.btn-outline-primary Meteorological
                                     label.quiz__radio.col-auto
-                                        input(type="radio", name="spend-money", value="Other ")
-                                        btn.btn.btn-outline-primary Other 
+                                        input(type="radio", name="sort-data", value="Other ")
+                                        .btn.btn-outline-primary Other 
                             .quiz__item
                                 h3.h3.quiz__subtitle
                                     |Wind Speed Data:
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
-                                        input(type="radio", name="spend-money", value="I-have-my-own")
-                                        btn.btn.btn-outline-primary I have my own
+                                        input(type="radio", name="speed-data", value="I-have-my-own")
+                                        .btn.btn-outline-primary I have my own
                                     label.quiz__radio.col-auto
-                                        input(type="radio", name="spend-money", value="I-want-to-find-quality-wind-speed-data")
-                                        btn.btn.btn-outline-primary I want to find quality wind speed data 
+                                        input(type="radio", name="speed-data", value="wind-speed-data")
+                                        .btn.btn-outline-primary I want to find quality wind speed data 
+            .partners.container#partners
+                h2.h2.text-center Our partners
+                .partners__slider.swiper-container
+                    .swiper-wrapper.align-items-center
+                        .swiper-slide.d-flex.justify-content-center.align-items-center
+                            img(src="images/partners/qube.png", alt="qube")
+                        .swiper-slide.d-flex.justify-content-center.align-items-center
+                            img(src="images/partners/aardvark.png", alt="aardvark")
+                        .swiper-slide.d-flex.justify-content-center.align-items-center
+                            img(src="images/partners/excellench.png", alt="excellench")
+                        .swiper-slide.d-flex.justify-content-center.align-items-center
+                            img(src="images/partners/emphasoft.svg", alt="emphasoft")
+            .our-f#faq 
+                .container
+                    .row.flex-column
+                        h2.h1.text-center.wow.animate__animated.animate__fadeInLeft(data-wow-duration="0.5s") Our features
+                        p.text-center.our-f__info
+                            |Lorem irure fugiat cupidatat duis mollit commodo. Eu cillum ea reprehenderit elit laboris do exercitation
+                            br
+                            |laborum sit elit incididunt aute fugiat consectetur. 
+                        .our-f__accordion#partnersAccordion
+                            .card
+                                #headingOne.card-header
+                                    button.btn.btn-link.d-flex.justify-content-between.align-items-center.w-100(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='false' aria-controls='collapseOne')
+                                        | Lorem irure fugiat cupidatat duis mollit commodo?
+                                        img(src="images/icons/angle_down.svg", alt="alt")
+                                #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#partnersAccordion')
+                                    .card-body
+                                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                .card
+                                #headingTwo.card-header
+                                    button.btn.btn-link.d-flex.justify-content-between.align-items-center.w-100.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+                                        | Commodo nisi aliqua proident consequat consequat?
+                                        img(src="images/icons/angle_down.svg", alt="alt")
+                                #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#partnersAccordion')
+                                    .card-body
+                                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                .card
+                                #headingThree.card-header
+                                    button.btn.btn-link.d-flex.justify-content-between.align-items-center.w-100.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+                                        | Sunt veniam voluptate reprehenderit consectetur eiusmod quis?
+                                        img(src="images/icons/angle_down.svg", alt="alt")
+                                #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#partnersAccordion')
+                                    .card-body
+                                        | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         include pug/blocks/footer.pug 

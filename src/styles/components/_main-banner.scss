@@ -1,6 +1,9 @@
 .main-banner {
   margin-top: 30px;
   margin-bottom: 76px;
+  &__bg {
+    top: 0;
+  }
   &__txt {
     font-size: 16px;
     line-height: 26px;
@@ -21,6 +24,14 @@
     &:hover {
       text-decoration: none;
       color: $txt-color;
+    }
+  }
+
+  &__img {
+    margin-top: 50px;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 0;
     }
   }
 }

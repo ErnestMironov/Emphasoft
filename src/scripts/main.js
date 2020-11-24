@@ -9,7 +9,6 @@ import Swiper, { Autoplay } from 'swiper';
 Swiper.use([Autoplay]);
 
 import 'swiper/swiper-bundle.css';
-import 'animate.css/animate.min.css';
 
 
 

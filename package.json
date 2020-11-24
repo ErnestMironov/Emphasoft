@@ -25,7 +25,7 @@
     "clean": "rm dist",
     "start": "parcel src/index.pug --open",
     "build-prod": "parcel build src/index.pug  --no-content-hash",
-    "build-prod-github": "parcel build src/index.pug --public-url /emphasoft --no-content-hash"
+    "build-prod-github": "parcel build src/index.pug --public-url /emphasoft/ --no-content-hash"
   },
   "keywords": [],
   "author": "",

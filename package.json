@@ -25,7 +25,8 @@
     "clean": "rm dist",
     "start": "parcel src/index.pug --open",
     "build-prod": "parcel build src/index.pug  --no-content-hash",
-    "build-prod-github": "parcel build src/index.pug --public-url /emphasoft/ --no-content-hash"
+    "public-gh": "npm run build-prod && gh-pages -d dist",
+    "build-prod-github": "parcel build src/index.pug --public-url /emphasoft/dist/ --no-content-hash"
   },
   "keywords": [],
   "author": "",

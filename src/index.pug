@@ -5,7 +5,7 @@ html(lang="en")
         include pug/blocks/header.pug 
         .main-banner.container#main
             .row.position-relative.justify-content-between.align-items-center
-                img.main-banner__bg.position-absolute.col-12.col-md-8(src="images/vector-map.svg")
+                img.main-banner__bg.position-absolute.col-12.col-md-8(src="images/vector-map.svg" alt="world map")
                 .main-banner__txt.col-12.col-md-5
                     h1.h1.main-banner__title Header
                     p.main-banner__desc
@@ -14,7 +14,7 @@ html(lang="en")
                         |laborum sit elit incididunt aute fugiat consectetur. 
                     a.main-banner__link(href="javascript:;") Watch the video to find out more
                 picture.main-banner__img.col-12.col-md-5
-                    source(src="images/video.webp", type="image/webp")
+                    source(srcset="images/video.webp", type="image/webp")
                     img.img-fluid(src="images/video.png", alt="alt")
         .page-content
             .faf.container#features
@@ -50,7 +50,7 @@ html(lang="en")
             .quiz.container#item
                 .row.align-items-center
                     .col-6.text-center.d-none.d-md-block
-                        img.quiz__img(src="images/service.svg")
+                        img.quiz__img(src="images/service.svg" alt="coloborate")
                     .col-12.col-md-6
                         h2.h1.quiz__title We want the best value for you:
                         .quiz__list
@@ -60,43 +60,43 @@ html(lang="en")
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="spend-money", value="yes")
-                                        .btn.btn-outline-primary Yes
+                                        span.btn.btn-outline-primary Yes
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="spend-money", value="no")
-                                        .btn.btn-outline-primary No
+                                        span.btn.btn-outline-primary No
                             .quiz__item
                                 h3.h3.quiz__subtitle
                                     |Who are you?
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="whoAU", value="Individual")
-                                        .btn.btn-outline-primary Individual
+                                        span.btn.btn-outline-primary Individual
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="whoAU", value="Student")
-                                        .btn.btn-outline-primary Student
+                                        span.btn.btn-outline-primary Student
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="whoAU", value="companyUser")
-                                        .btn.btn-outline-primary Company user
+                                        span.btn.btn-outline-primary Company user
                             .quiz__item
                                 h3.h3.quiz__subtitle
                                     |What sort of data are you working with?
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="sort-data", value="Meteorological")
-                                        .btn.btn-outline-primary Meteorological
+                                        span.btn.btn-outline-primary Meteorological
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="sort-data", value="Other ")
-                                        .btn.btn-outline-primary Other 
+                                        span.btn.btn-outline-primary Other 
                             .quiz__item
                                 h3.h3.quiz__subtitle
                                     |Wind Speed Data:
                                 .quiz__radio-wrap.wrap
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="speed-data", value="I-have-my-own")
-                                        .btn.btn-outline-primary I have my own
+                                        span.btn.btn-outline-primary I have my own
                                     label.quiz__radio.col-auto
                                         input(type="radio", name="speed-data", value="wind-speed-data")
-                                        .btn.btn-outline-primary I want to find quality wind speed data 
+                                        span.btn.btn-outline-primary I want to find quality wind speed data 
             .partners.container#partners
                 h2.h2.text-center Our partners
                 .partners__slider.swiper-container
